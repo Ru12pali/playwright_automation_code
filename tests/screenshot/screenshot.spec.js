@@ -13,7 +13,7 @@ test ('full page',async({page})=>{
     await page.screenshot({path:'tests/screenshot/' + 'fullpage.png', fullPage:true});
 })
 
-test.only('Element',async({page})=>{
+test('Element',async({page})=>{
 
     await page.goto("https://www.amazon.in/");
     const element=await page.locator("//h2[contains(text(),'Appliances for your home')]")
